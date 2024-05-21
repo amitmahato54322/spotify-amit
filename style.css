@@ -1,0 +1,557 @@
+body {
+  /* will do this later on */
+  background-color: black;
+  color: white;
+}
+
+
+.left {
+  width: 25vw;
+  /* since it is almost 25% of total width*/
+  padding: 10px;
+  margin: 0px -9px;
+  background-color: black;
+}
+
+.right {
+  position: relative;
+  width: 75vw;
+  /* since it is almost 75% of total width*/
+  margin: 14px 1px !important;
+}
+
+.home ul li {
+  width: 15px;
+  list-style: none;
+  /* removed the small dots that used to appear before each items*/
+  display: flex;
+  /* make text and logo appear side by side horizontally */
+  gap: 15px;
+  padding-top: 14px;
+  font-weight: bold;
+}
+
+.home {
+  padding: 10px;
+  background-color: rgb(24, 23, 23);
+
+}
+
+.library {
+  background-color: rgb(24, 23, 23);
+  /* border: 2px solid red; */
+  min-height: 80vh;
+  font-size: 13px;
+}
+
+
+.heading {
+  display: flex;
+  gap: 15px;
+  padding: 23px 1px;
+  padding-top: 14px;
+  font-weight: bold;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 10px;
+}
+
+.heading img {
+  width: 30px;
+}
+
+.footer {
+  font-size: 10px;
+  color: grey;
+  gap: 13px;
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0;
+
+
+}
+
+.footer a {
+  color: grey;
+  /* text-decoration: none; */
+}
+
+
+/* align items ---> vertical  */
+/* justify content--> :horizontal */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: rgb(34, 34, 34);
+  height: 70px;
+  position: relative;
+}
+
+
+.header * {
+  padding: 1rem;
+}
+
+
+
+.nav {
+  height: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.spotifyPlaylist {
+  padding: 16px;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* flex-wrap: wrap; */
+  margin-top: 30px;
+  /* we want to create a separate scroll-bar for the right section where there is playlist and cover of music only.  */
+  overflow-y: auto ;
+  max-height: 65vh !important;
+}
+
+.spotifyPlaylist .cardContainer .card {
+  width: 200px ;
+  padding: 10px;
+  /* height: 5rem; */
+  border-radius: 5px;
+  background: #252525;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.9s ease-out;
+
+  /* height: 20px; */
+}
+
+.spotifyPlaylist .cardContainer .card:hover{
+  background: rgb(60, 59, 59);
+}
+
+
+
+.card * {
+  padding-top: 9px;
+  font-size: 14px;
+}
+
+
+
+.card .play i {
+  /* opacity: 0; */
+  color: rgb(5, 5, 5);
+  font-size: 28px;
+  position: absolute;
+  background: rgb(30, 215, 96);
+  top: 149px;
+  right: 20px;
+  border: none;
+  padding: 10px 15px;
+  padding-right: 13px !important;
+  border-radius: 5rem;
+  transition: all 0.4s ease-out;
+  transform: translateY(10px);
+  opacity: 0;
+  /* fill: green; */
+
+}
+
+
+
+
+.card:hover i {
+
+  opacity: 0.7;
+  transform: translateY(0px);
+ 
+
+}
+
+.card .play i:hover {
+  transform: scale(1.15);
+}
+
+.card h2 {
+  font-size: 20px !important;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+
+.signupbtn {
+  background: rgb(34, 34, 34);
+  color: rgb(200, 192, 192);
+  font-weight: bold;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  margin-bottom: 50px;
+  transition: all 0.2s ease-out;
+  margin-right: 30px;
+  padding: 1px;
+}
+
+.signupbtn:hover {
+  font-size: 17px;
+  color: white;
+  cursor: pointer;
+}
+
+
+.loginbtn {
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  margin-left: 30px;
+  color: rgb(57, 55, 55);
+  font-weight: bold;
+  font-size: 17px;
+  padding: 15px 28px;
+  cursor: pointer;
+  transition: all 0.4s ease-out;
+}
+
+.loginbtn:hover {
+  background-color: white;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  color: rgb(1, 1, 1);
+  font-weight: bolder;
+  font-size: 17px;
+  padding: 15.5px 30px;
+  cursor: pointer;
+}
+
+
+
+.playbar {
+  position: fixed;
+
+  justify-content: center;
+
+  display: flex;
+  bottom: 0px;
+  border-radius: 8px;
+  background-color: rgb(43, 41, 41);
+  width: 73vw;
+  /* margin-left: 10px; */
+  /*margin-right: 20px; */
+
+  left: 25%;
+  padding: 10px;
+  height: 70px;
+  z-index: 1;
+  align-items: center;
+}
+
+.playbtn {
+  height: 29px;
+  filter: invert(1);
+
+}
+
+.songbuttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  gap: 13px;
+}
+
+.songlist {
+  position: relative;
+  /* margin-bottom: 40px; */
+  height: 55vh !important;
+  overflow: auto;
+  overflow-x: hidden;
+  margin-right: 10px;
+
+}
+
+.songlist ul {
+  padding: 0 5px;
+}
+
+.songlist ul li img {
+  height: 16px;
+
+}
+
+
+.songlist ul li {
+  list-style-type: decimal;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  gap: 15px;
+  margin: 8.3px;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 0;
+  border: 1px solid white;
+  /* margin: 12px; */
+  padding: 13px;
+  border-radius: 5px;
+  
+}
+
+.playnow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 19.5px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+}
+
+/* .info div{
+  word-break: break-all;
+} */
+
+.info .artist {
+
+  padding-top: 8px;
+  /* width: 344px; */
+}
+
+
+.playnow span {
+  font-size: 12px;
+  width: 65px;
+  font-weight: 400 !important;
+  /* padding: 12px; */
+
+}
+
+
+.seekbar {
+  height: 4px;
+  width: 98%;
+
+  cursor: pointer;
+  border: 0.5px solid rgb(236, 227, 227);
+  border-radius: 10px;
+  /* background: white; */
+  background-color: black;
+  position: absolute;
+  bottom: 4px;
+
+}
+
+.circle {
+  position: relative;
+  width: 12px;
+  height: 12px;
+
+  bottom: 4px !important;
+  border-radius: 50px;
+  background: white;
+  left: 0%;
+  transition: left 0.5s;
+
+}
+
+.songbuttons img {
+  cursor: pointer;
+}
+
+ .songtime {
+  font-size: 14px;
+  color: white;
+  margin-top: 0px;
+  padding: 0 10px;
+  width: 114px;
+  /* border: 2px solid ; */
+  
+  
+}
+
+.songinfo{
+  color: white;
+  margin-top: 0px;
+  padding: 0 15px;
+  width: 300px;
+  
+}
+
+.range{
+  padding-left: 10px;
+}
+
+.range input{
+  cursor: pointer;
+  
+}
+
+.volume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+
+
+.timevol{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.abovebar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 200px;
+}
+
+.hamburger {
+  display: none;
+  height: 68px;
+  margin-bottom: 50px !important;
+
+}
+
+.hamburgercont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left .close {
+  display: none;
+}
+
+/* Now working on the responsiveness of the page */
+
+@media (max-width:1400px) {
+
+ 
+
+  .left {
+    height: 90vh;
+    /* overflow-y: hidden; */
+    position: absolute;
+    left: -120%;
+    transition: all 0.5s ease-out;
+    z-index: 1;
+    width: 410px;
+    background-color: black;
+    padding:0;
+
+  }
+
+  .right{
+    margin: 0px;
+  }
+  
+
+  .card .play i {
+    
+    top: 279px;
+  }
+ 
+
+  .playbar{
+    /* position: relative; */
+    /* margin: 0; */
+     width: 90.8%;
+     left: 4.5%; 
+     bottom: 0px;
+     font-size: 14px;
+     height: 140px;
+  }
+  .cardContainer{
+    height:auto;
+  }
+
+  .right {
+    width: 100vw;
+  }
+  
+  .spotifyPlaylist .cardContainer .card{
+    width: 325px;
+  }
+
+
+  .abovebar{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  .abovebar .songinfo{
+    margin-left: 130px;
+    /* width: auto; */
+    
+  }
+
+  .abovebar .songtime{
+    margin-left: 25px;
+    /* width: auto; */
+    
+
+  }
+
+  .timevol{
+    flex-direction: column;
+    gap: 0px;
+    margin-bottom: 15px;
+  }
+
+ 
+  
+
+  /* .playbar {
+    width: 95vw;
+  } */
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 24px;
+    bottom: -45px;
+    z-index: 0;
+    cursor: pointer;
+  }
+
+  .left .close {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    display: inline;
+    cursor: pointer;
+  }
+
+  .cardContainer{
+    justify-content: center;
+  }
+
+  .nav i {
+    display: none;
+  }
+}
+
+
+/* time; 3.51 */

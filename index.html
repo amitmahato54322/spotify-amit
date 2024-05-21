@@ -1,0 +1,169 @@
+<!-- time stamp: 1-51-02 -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify web-player : By Amit</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utility.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+  <div class="container flex bg-black"> <!-- main container-->
+    <!-- left div starts-->
+    <div class="left">
+      <div class="close">
+        <img class="invert" width="28px" src="close.svg" alt="close">
+      </div>
+      <div class="home bg-grey rounded m-1 p-1">
+        <div class="logo"><img width="120px" class="invert" src="logo.svg" alt="Logo"></div>
+        <ul>
+          <li><img class="invert" src="home.svg" alt="Home">Home</li>
+          <li><img class="invert" src="search.svg" alt="Search">Search</li>
+        </ul>
+      </div>
+      <div class="library bg-grey rounded m-1 p-1">
+        <div class="heading">
+          <img class="invert" src="playlist.svg" alt="playlist">
+          <h2>Your library</h2>
+
+        </div>
+        <!-- list of songs below-->
+        <div class="songlist">
+
+          <ul>
+
+          </ul>
+
+        </div>
+
+        <div class="footer">
+
+          <div><a href="https://www.spotify.com/np-en/legal/"><span>Legal</span></a></div>
+          <div><a href="https://www.spotify.com/np-en/safetyandprivacy/"><span>Safety &amp; Privacy Center</span></a>
+          </div>
+          <div><a href="https://www.spotify.com/np-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+          <div><a href="https://www.spotify.com/np-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+          <div><a href="https://www.spotify.com/np-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+          <div><a href="https://www.spotify.com/np-en/accessibility/"><span>Accessibility</span></a></div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <!-- left div completed -->
+
+
+    <!-- right div starts-->
+    <div class="right bg-grey rounded">
+
+      <div class="header">
+        <div class="nav">
+          <div class="hamburgercont">
+
+            <img class="invert hamburger" src="hamburger.svg" alt="Menu">
+              
+              <i class="fa-solid fa-chevron-left"></i>
+              <i class="fa-solid fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="signupbtn">Sign Up</button>
+          <button class="loginbtn">Log In</button>
+
+        </div>
+      </div>
+      <div class="spotifyPlaylist">
+        <h1>Spotify Playlist</h1>
+        <div class="cardContainer">
+          <!-- firt card -->
+          <div data-folder="ncs" class="card ">
+            <div  class="play"><i class="fa-solid fa-play"></i></div>
+            <img src="singer1.jpg" alt="">
+            <h2>Happy Hits!</h2>
+            <p>Hits to boost your mood and fill you with happiness!</p>
+          </div>
+
+          <!-- second card -->
+          <div data-folder="arijit" class="card ">
+            <div class="play"><i class="fa-solid fa-play"></i></div>
+            <img src="arijit.jpg" alt="">
+            <h2>Arijit Singh</h2>
+            <p>Enhance your mood with Arijit's Melodies !</p>
+          </div>
+
+          <!-- third card -->
+          <div data-folder="arijit" class="card ">
+            <div class="play"><i class="fa-solid fa-play"></i></div>
+            <img src="singer3.webp" alt="">
+            <h2>Music Time!</h2>
+            <p>Life is Enjoy!</p>
+          </div>
+
+         
+        </div>
+
+
+        <div class="playbar">
+          <div class="seekbar">
+            <div class="circle">
+
+            </div>
+          </div>
+          <div class="abovebar">
+
+
+            <div class="songinfo">
+              <p>song name</p>
+            </div>
+            <div class="songbuttons">
+              <img id="previous" class="playbtn previous" src="previoussong.svg" alt="previous ">
+              <img id="play" class="playbtn play" src="play.svg" alt="play ">
+              <img id="next" class="playbtn next" src="nextsong.svg" alt="next ">
+
+            </div>
+            <div class="timevol">
+              <div class="songtime">
+                <p>00:00/00:00</p>
+              </div>
+
+              <div class="volume">
+                <img height="18px" class="invert" src="volume.svg" alt="volume">
+
+                <div class="range">
+                  <input type="range" name="volume" class="invert">
+                </div>
+
+              </div>
+            </div>
+            
+           
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <!-- right div completed-->
+
+  </div>
+
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>

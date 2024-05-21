@@ -1,0 +1,80 @@
+/* xmlns="http://www.w3.org/2000/svg" */
+
+/* left and right icons were taken from fontawesome */
+
+/* first copy the fontawesomecdn code link and paste in header tag and then copy the code of any free icons and paste icon link any-where you want  */
+
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.border{
+  border: 2px solid red;
+  margin: 3px;
+}
+
+.flex{
+  display: flex;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.bg-black{
+  background-color: black;
+  color: white;
+}
+
+.invert{
+  filter: invert(1);
+  /* this will invert or change the color of svg from black (default) to white */
+}
+
+
+.bg-grey{
+  background:  #161414;
+}
+
+.rounded{
+  border-radius: 7px;
+}
+
+.m-1{
+  margin: 5px;
+}
+
+.p-1{
+  padding: 10px;
+}
+
+
+/* For webkit browsers (e.g. Chrome, safari) */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #141313; /* Dark Color for the Thumb*/
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #000000;
+  /* dark color for the track */
+}
+
+/* for firefox browser */
+/* scrollbar-color: #333 #222; */
+
+/* <i class="fa-regular fa-circle-play"></i>  playbutton */
+/* <i class="fa-solid fa-backward-step"></i>  previous song button */
+
+
